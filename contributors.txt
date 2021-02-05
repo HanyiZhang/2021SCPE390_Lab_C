@@ -39,3 +39,4 @@ Christian Diesen
 >>>>>>> 116eb0bdb37cfc2d44b063ba8e35f9704c19b45a
 Liamjohn Velazquez
 Peter Shkihman
+Rui Fernandes
