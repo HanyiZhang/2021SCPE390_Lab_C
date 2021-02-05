@@ -4,4 +4,8 @@ David Krauthamer
 Jonathan Melamed
 Nihal Hossain
 Arif Amzad
+<<<<<<< HEAD
 Jackie Fang
+=======
+Zoe Casten
+>>>>>>> 9fe11a4516c0493ae01b0cb830c931ee74775f44
