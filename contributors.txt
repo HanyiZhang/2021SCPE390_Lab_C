@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 TA: Hanyi Zhang
 Students:
 David Krauthamer
@@ -6,3 +7,12 @@ Nihal Hossain
 Arif Amzad
 Zoe Casten
 Arth Jani
+=======
+TA: Hanyi Zhang
+Students:
+David Krauthamer
+Jonathan Melamed
+Nihal Hossain
+Arif Amzad
+Zoe Casten
+>>>>>>> 9fe11a4516c0493ae01b0cb830c931ee74775f44
