@@ -3,3 +3,4 @@ Students:
 David Krauthamer
 Jonathan Melamed
 Nihal Hossain
+Arif Amzad
