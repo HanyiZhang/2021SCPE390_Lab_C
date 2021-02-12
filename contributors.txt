@@ -17,6 +17,7 @@ Liamjohn Velazquez
 Peter Shkihman
 Rui Fernandes
 Valerie Ribertelli
+John Onwugbonu
 <<<<<<< HEAD
 Brandon Joel
 =======
@@ -27,6 +28,7 @@ Liamjohn Velazquez
 Peter Shkihman
 Rui Fernandes
 Valerie Ribertelli
+John Onwugbonu
 Brandon Joel
 >>>>>>> cf109767169650d04722dc7dd6fe26c7ab0b6f62
 Thomas Wang
