@@ -12,6 +12,13 @@ Thomas Wang
 >>>>>>> e5db166da21d4a57185bfd52c20dfa908bf9f7ee
 Winston Lei
 Peter Shikhman
+<<<<<<< HEAD
+Cameron Kline
+=======
 Luisa Bonfim
 Brandon Joel
+<<<<<<< HEAD
 Claire McNeill
+=======
+>>>>>>> 93bfd44158026b4874c0c3a86439e3bd153d1c1e
+>>>>>>> 676cfa4aa779fe2b8907a510477c17fcd938b8bb
