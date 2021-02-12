@@ -4,4 +4,9 @@ Jonathan Melamed
 David Krauthamer
 Jackie Fang
 Arif Amzad
+<<<<<<< HEAD
+Winston Lei
+=======
+Thomas Wang
+>>>>>>> e5db166da21d4a57185bfd52c20dfa908bf9f7ee
 Winston Lei
