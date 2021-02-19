@@ -48,8 +48,13 @@ int countPrimes(int a, int b) {
 
   return count;
 }
-// 6
-int gcd(int a, int b) {}
+// 6 Nathan Molinari
+int gcd(int a, int b) {
+ if (b==0) 
+    return a;
+    return gcd(b, a%b);
+ 		       
+}
 // 7
 int hypot(int a, int b) {}
 // 8
