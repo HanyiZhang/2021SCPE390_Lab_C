@@ -66,17 +66,8 @@ int gcd(int a, int b) {
 }
 
 // 7 Winston Lei
-<<<<<<< HEAD
-int hypot(int a, int b) {return sqrt((a * a) + (b * b))}
-=======
-int hypot(int a, int b) {
-  double leg_x, leg_y, result;
-  leg_x = int a;
-  leg_y = int b;
-  result = hypot (leg_x, leg_y);
-  printf ("%f, %f and %f form a right-angled triangle.\n",leg_x,leg_y,result);
-  return 0;
-  }
+int hypot(int a, int b) {return sqrt((a * a) + (b * b));}
+
 // 8
 int diffsq(int a, int b) {}
 =======
@@ -213,7 +204,8 @@ int demean(double x[], int length) {
 // 7 Winston Lei
 int addToEach(double x[], int length, int delta) {
   for (int i = 0; i < length; i++) {
-    (x[i] += delta); }
+    x[i] += delta;
+    cout << arr[i] << " "}
   }
 
 // 8 Jackie Fang
