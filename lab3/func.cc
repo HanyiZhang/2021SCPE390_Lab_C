@@ -18,6 +18,12 @@ int prod(int a, int b) {
   int result = a*b;
   return result;
 }
+//Liamjohn Velazquez
+int prod(int a, int b)
+{
+  int prod = a * b;
+  return prod;
+} 
 // 3
 int sumsq(int a, int b) {//Jonathan M
 int sum = 0;
@@ -209,6 +215,25 @@ int demean(double x[], int length) {
   }
 
   return 0; }
+// 6 Liamjohn Velazquez
+int demean(double x[], int length)
+
+{
+  double sum;
+  double mean;
+  int i = 0;
+  for (i; i < length; i++)
+  {
+    sum = sum + x[i];
+  }
+  mean = sum / length;
+  for (int i = 0; i < length; i++)
+  {
+    x[i] = x[i] - mean;
+  }
+
+  return x[i];
+}
 
 // 7 Winston Lei
 int addToEach(double x[], int length, int delta) {
