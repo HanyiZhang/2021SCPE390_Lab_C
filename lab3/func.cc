@@ -64,7 +64,16 @@ double mean(int x[], int length) {
 int max(int x[], int length) {}
 
 // 3
-int min(int x[], int length) {}
+int min(int x[], int length) { //Jonathan Melamed
+
+   int head = x[0];
+	for (int i = 0; int < 0; i<length; i++){
+		if (head > x[i]){
+			head = x[i];
+			}
+	}	
+   return head;
+}
 
 // 4
 int prod(int x[], int length) {}
