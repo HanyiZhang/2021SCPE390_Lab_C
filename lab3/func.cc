@@ -47,7 +47,7 @@ int diffsq(int a, int b) {}
 // 9
 int mean2(int a, int b) {}
 // 10
-int mean3(int a, int b) {}
+int mean3(int a, int b, int c) {}
 // 11
 int min(int a, int b) {}
 // 12
@@ -132,8 +132,8 @@ int main() {
   cout << "hypot(3,4)=" << hypot(3, 4) << '\n';
   cout << "hypot(4,5)=" << hypot(4, 5) << '\n';
   cout << "diffsq(3,4)=" << diffsq(3, 4) << '\n';
-  cout << "mean(1,4)=" << mean2(1, 4) << '\n';
-  cout << "mean(1,4,5)=" << mean3(1, 4, 5) << '\n';
+  cout << "mean2(1,4)=" << mean2(1, 4) << '\n';
+  cout << "mean3(1,4,5)=" << mean3(1, 4, 5) << '\n';
   cout << "max(1,5)=" << max(1, 5) << '\n';
   cout << "min(2,5)=" << min(2, 5) << '\n';
   cout << "isEven(5)=" << isEven(5) << '\n';
