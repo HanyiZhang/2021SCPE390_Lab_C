@@ -12,10 +12,19 @@ using namespace std;
 
 // scalar functions
 // 1
+<<<<<<< HEAD
+int sum(int a, int b) {}
+// 2 Brandon Joel
+int prod(int a, int b) {
+  int result = a*b;
+  return result;
+}
+=======
 // David Krauthamer
 int sum(int a, int b) { return a + b; }
 // 2
 int prod(int a, int b) {}
+>>>>>>> ca79b29f02a2e141e985d2f14dad9a7cd79db9b0
 // 3
 int sumsq(int a, int b) {//Jonathan M
 int sum = 0;
@@ -38,7 +47,7 @@ int diffsq(int a, int b) {}
 // 9
 int mean2(int a, int b) {}
 // 10
-int mean3(int a, int b) {}
+int mean3(int a, int b, int c) {}
 // 11
 int min(int a, int b) {}
 // 12
@@ -60,8 +69,15 @@ double mean(int x[], int length) {
   return (double)tot / length;
 }
 
-// 2
-int max(int x[], int length) {}
+// 2 Brandon Joel
+int max(int x[], int length) {
+  int result = INT_MIN;
+  for (int i = 0; i < length; i++){
+    if x[i] > result
+	  result = x[i];
+  }
+  return result;
+}
 
 // 3
 int min(int x[], int length) { //Jonathan Melamed
@@ -125,8 +141,8 @@ int main() {
   cout << "hypot(3,4)=" << hypot(3, 4) << '\n';
   cout << "hypot(4,5)=" << hypot(4, 5) << '\n';
   cout << "diffsq(3,4)=" << diffsq(3, 4) << '\n';
-  cout << "mean(1,4)=" << mean2(1, 4) << '\n';
-  cout << "mean(1,4,5)=" << mean3(1, 4, 5) << '\n';
+  cout << "mean2(1,4)=" << mean2(1, 4) << '\n';
+  cout << "mean3(1,4,5)=" << mean3(1, 4, 5) << '\n';
   cout << "max(1,5)=" << max(1, 5) << '\n';
   cout << "min(2,5)=" << min(2, 5) << '\n';
   cout << "isEven(5)=" << isEven(5) << '\n';
