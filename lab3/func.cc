@@ -11,20 +11,13 @@
 using namespace std;
 
 // scalar functions
-// 1
-<<<<<<< HEAD
-int sum(int a, int b) {}
+// 1 David Krauthamer
+int sum(int a, int b) { return a + b; }
 // 2 Brandon Joel
 int prod(int a, int b) {
   int result = a*b;
   return result;
 }
-=======
-// David Krauthamer
-int sum(int a, int b) { return a + b; }
-// 2
-int prod(int a, int b) {}
->>>>>>> ca79b29f02a2e141e985d2f14dad9a7cd79db9b0
 // 3
 int sumsq(int a, int b) {//Jonathan M
 int sum = 0;
@@ -61,7 +54,7 @@ int countPrimes(int a, int b) {
       count++;
     }
   }
-
+  
   return count;
 }
 // 6 Nathan Molinari
@@ -71,6 +64,7 @@ int gcd(int a, int b) {
     return gcd(b, a%b);
  		       
 }
+<<<<<<< HEAD
 // 7 Winston Lei
 int hypot(int a, int b) {
   double leg_x, leg_y, result;
@@ -82,14 +76,41 @@ int hypot(int a, int b) {
   }
 // 8
 int diffsq(int a, int b) {}
+=======
+// 7
+int hypot(int a, int b) {}
+// 8 Jackie Fang
+int diffsq(int a, int b) {return a * a - b * b;}
+>>>>>>> 03edf383c414731d379bf4657e280e45d3cb2911
 // 9
 int mean2(int a, int b) {}
 // 10
 int mean3(int a, int b, int c) {}
 // 11
 int min(int a, int b) {}
-// 12
-int max(int a, int b) {}
+
+// 12 Peter Shihman
+int max(int a, int b) {
+    int a = 0;
+    int b = 0;
+
+    cout << "Enter a number: ";
+    cin >> a;
+    cout << "Enter another number: ";
+    cin >> b;
+
+    if (a > b)
+    {
+        cout << "Bigger number: " << a;
+        return 0;
+    }
+        else;
+    {
+        cout << "Bigger number: " << b;
+    }
+}
+
+
 // 13
 bool isEven(int a) {}
 
@@ -108,6 +129,16 @@ double mean(int x[], int length) {
 }
 
 // 2 Brandon Joel
+int max(int x[], int length) {
+  int result = INT_MIN;
+  for (int i = 0; i < length; i++){
+    if x[i] > result
+	  result = x[i];
+  }
+  return result;
+}
+
+// 2 Peter Shikhman
 int max(int x[], int length) {
   int result = INT_MIN;
   for (int i = 0; i < length; i++){
@@ -159,7 +190,13 @@ int demean(double x[], int length) { return 0; }
 int addToEach(double x[], int length, int delta) {}
 
 // 8
-int countEvens(int x[], int length) {}
+int countEvens(int x[], int length) {
+  int num = 0;
+  for (int i = 0; i < length; i++) {
+    if (x[i] % 2 == 0) num++;
+  }
+  return num;
+}
 
 // 9
 int reverse(int x[], int length) { return 0; }
