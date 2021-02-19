@@ -231,6 +231,7 @@ int addToEach(double x[], int length, int delta) {
   for (int i = 0; i < length; i++) {
     x[i] += delta;
     cout << arr[i] << " "}
+  return 0;
   }
 
 // 8 Jackie Fang
