@@ -138,8 +138,13 @@ int max(int a, int b) {
 }
 
 
-// 13
-bool isEven(int a) {}
+// 13 (Arth Jani
+bool isEven(int a) {
+  if (a % 2 == 0)
+    return true;
+  else
+    return false;
+}
 
 // 14
 double perimeter3(int x1, int y1, int x2, int y2, int x3, int y3) {}
@@ -185,6 +190,17 @@ int min(int x[], int length) { //Jonathan Melamed
 			}
 	}	
    return head;
+}
+
+int min(int x[], int length){ // Arth Jani
+  int low = x[0];
+
+  for(int i = 1; i < length; i++){
+    if(x[i] < low){
+      low = x[i];
+    }
+  }
+  return low;
 }
 
 // 4 - Thomas Wang
