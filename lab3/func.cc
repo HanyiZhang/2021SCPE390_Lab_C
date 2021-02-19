@@ -77,23 +77,23 @@ int min(int a, int b) {}
 
 // 12 Peter Shihman
 int max(int a, int b) {
-    int a = 0;
-    int b = 0;
-
-    cout << "Enter a number: ";
-    cin >> a;
-    cout << "Enter another number: ";
-    cin >> b;
-
+  
     if (a > b)
     {
-        cout << "Bigger number: " << a;
-        return 0;
+        return a;
     }
-        else;
+
+    else if (b > a)
     {
-        cout << "Bigger number: " << b;
+        return b;
     }
+
+    else
+    {
+        return a;
+    }
+
+ return 0;
 }
 
 
