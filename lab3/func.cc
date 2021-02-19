@@ -12,7 +12,8 @@ using namespace std;
 
 // scalar functions
 // 1
-int sum(int a, int b) {}
+// David Krauthamer
+int sum(int a, int b) { return a + b; }
 // 2
 int prod(int a, int b) {}
 // 3
@@ -50,7 +51,14 @@ double perimeter3(int x1, int y1, int x2, int y2, int x3, int y3) {}
 
 // array functions
 // 1
-double mean(int x[], int length) {}
+// David Krauthamer
+double mean(int x[], int length) {
+  int tot = 0;
+  for (int i = 0; i < length; i++) {
+    tot += x[i];
+  }
+  return (double)tot / length;
+}
 
 // 2
 int max(int x[], int length) {}
@@ -90,14 +98,14 @@ void print(int a[], int length) {
 
 int main() {
   cout << sum(1, 3) << ' ' << sum(1, 100)
-       << '\n';  // should work no problem, right?
+       << '\n'; // should work no problem, right?
   cout << sum(1, 1000000)
-       << '\n';  // what should this be? Don't assume it's right, check!
+       << '\n'; // what should this be? Don't assume it's right, check!
 
-  cout << prod(2, 5) << '\n';  // 2*3*4*5 = 120
+  cout << prod(2, 5) << '\n'; // 2*3*4*5 = 120
   cout << prod(3, 10) << '\n';
-  cout << prod(3, 20) << '\n';  // just note whether you think these are right
-  cout << prod(3, 30) << '\n';  // if it overflows, you don't have to fix it
+  cout << prod(3, 20) << '\n'; // just note whether you think these are right
+  cout << prod(3, 30) << '\n'; // if it overflows, you don't have to fix it
   cout << prod(3, 100) << '\n';
   cout << sumsq(1, 5) << '\n';
   cout << "countPrimes(1,100): " << countPrimes(1, 100) << '\n';
@@ -117,12 +125,12 @@ int main() {
 
   // array problems
   int arr[] = {1, 4, 3, 2};
-  cout << "arr avg=" << mean(arr, 4) << '\n';            // should be 2.5
-  cout << "arr max=" << max(arr, 4) << '\n';             // should be 4
-  cout << "arr max=" << min(arr, 4) << '\n';             // should be 1
-  cout << "arr prod=" << prod(arr, 4) << '\n';           // should be 24
-  cout << "arr sum=" << sum(arr, 4) << '\n';             // should be 10
-  cout << "count evens=" << countEvens(arr, 4) << '\n';  // should be 10
+  cout << "arr avg=" << mean(arr, 4) << '\n';           // should be 2.5
+  cout << "arr max=" << max(arr, 4) << '\n';            // should be 4
+  cout << "arr max=" << min(arr, 4) << '\n';            // should be 1
+  cout << "arr prod=" << prod(arr, 4) << '\n';          // should be 24
+  cout << "arr sum=" << sum(arr, 4) << '\n';            // should be 10
+  cout << "count evens=" << countEvens(arr, 4) << '\n'; // should be 10
 
   int arr2[] = {5, 6, 7, 8, 9, 10, 2, 1};
   cout << "arr avg=" << mean(arr2, 8) << '\n';
