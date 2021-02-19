@@ -118,28 +118,33 @@ int min(int a, int b) {
 
 // 12 Peter Shihman
 int max(int a, int b) {
-    int a = 0;
-    int b = 0;
-
-    cout << "Enter a number: ";
-    cin >> a;
-    cout << "Enter another number: ";
-    cin >> b;
-
+  
     if (a > b)
     {
-        cout << "Bigger number: " << a;
-        return 0;
+        return a;
     }
-        else;
+
+    else if (b > a)
     {
-        cout << "Bigger number: " << b;
+        return b;
     }
+
+    else
+    {
+        return a;
+    }
+
+ return 0;
 }
 
 
-// 13
-bool isEven(int a) {}
+// 13 (Arth Jani
+bool isEven(int a) {
+  if (a % 2 == 0)
+    return true;
+  else
+    return false;
+}
 
 // 14 - Arif Amzad
 double perimeter3(int x1, int y1, int x2, int y2, int x3, int y3) {
@@ -189,6 +194,17 @@ int min(int x[], int length) { //Jonathan Melamed
 			}
 	}	
    return head;
+}
+
+int min(int x[], int length){ // Arth Jani
+  int low = x[0];
+
+  for(int i = 1; i < length; i++){
+    if(x[i] < low){
+      low = x[i];
+    }
+  }
+  return low;
 }
 
 // 4 - Thomas Wang
@@ -261,7 +277,8 @@ int demean(double x[], int length)
 int addToEach(double x[], int length, int delta) {
   for (int i = 0; i < length; i++) {
     x[i] += delta;
-    cout << arr[i] << " "}
+    cout << arr[i] << " ";
+  }
   return 0;
   }
 
