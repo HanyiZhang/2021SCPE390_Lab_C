@@ -104,11 +104,11 @@ int min(int a, int b) {
   cout << "enter a second number" << endl;
   cin >> b;
   if (a > b){
-    cout << a << "is the minimum" << endl;
+    cout << b << "is the minimum" << endl;
     return b;
   }
-  else if (b < a){
-    cout << b << "is the minimum" << endl;
+  else if (b > a){
+    cout << a << "is the minimum" << endl;
     return a;
   }
   else{
