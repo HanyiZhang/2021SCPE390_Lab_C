@@ -71,8 +71,15 @@ int gcd(int a, int b) {
     return gcd(b, a%b);
  		       
 }
-// 7
-int hypot(int a, int b) {}
+// 7 Winston Lei
+int hypot(int a, int b) {
+  double leg_x, leg_y, result;
+  leg_x = int a;
+  leg_y = int b;
+  result = hypot (leg_x, leg_y);
+  printf ("%f, %f and %f form a right-angled triangle.\n",leg_x,leg_y,result);
+  return 0;
+  }
 // 8
 int diffsq(int a, int b) {}
 // 9
