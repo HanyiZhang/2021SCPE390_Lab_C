@@ -18,6 +18,12 @@ int prod(int a, int b) {
   int result = a*b;
   return result;
 }
+//Liamjohn Velazquez
+int prod(int a, int b)
+{
+  int prod = a * b;
+  return prod;
+} 
 // 3
 int sumsq(int a, int b) {//Jonathan M
 int sum = 0;
@@ -64,16 +70,51 @@ int gcd(int a, int b) {
     return gcd(b, a%b);
  		       
 }
-// 7
-int hypot(int a, int b) {}
+
+// 7 Winston Lei
+int hypot(int a, int b) {return sqrt((a * a) + (b * b));}
+
 // 8
 int diffsq(int a, int b) {}
-// 9
-int mean2(int a, int b) {}
+=======
+// 7
+int hypot(int a, int b) {}
+<<<<<<< HEAD
+// 8
+int diffsq(int a, int b) {}
+// 9 - Valerie Ribertelli
+int mean2(int a, int b) {
+  //Returning the average of the inputs
+  return (a+b)/2
+}
+=======
+>>>>>>> 8b9de1359fdaf354cbe013bfdbe7f99eb455a7d2
+// 8 Jackie Fang
+int diffsq(int a, int b) {return a * a - b * b;}
+>>>>>>> 03edf383c414731d379bf4657e280e45d3cb2911
+
 // 10
 int mean3(int a, int b, int c) {}
-// 11
-int min(int a, int b) {}
+// 11 Christian Diesen
+int min(int a, int b) {
+  int a;
+  int b;
+  cout << "enter a number" << endl;
+  cin >> a;
+  cout << "enter a second number" << endl;
+  cin >> b;
+  if (a > b){
+    cout << b << "is the minimum" << endl;
+    return b;
+  }
+  else if (b > a){
+    cout << a << "is the minimum" << endl;
+    return a;
+  }
+  else{
+    cout << "the numbers are equal" << endl;
+  }
+}
 
 // 12 Peter Shihman
 int max(int a, int b) {
@@ -169,18 +210,69 @@ int sum(int arr[], int size) {
   return total;
 }
 
-// 6
-int demean(double x[], int length) { return 0; }
+// 6 Nathan Molinari
+int demean(double x[], int length) {
+   int avg=0; 
+  double total=0;
+    for (int i=0; i<len; i++) {
+    total += arr[i];
+    }
+  avg = total/len;
+  for (int i=0; i<len; i++) {
+    arr[i] -=avg;
+    cout << arr[i] << " ";
+  }
 
-// 7
-int addToEach(double x[], int length, int delta) {}
+  return 0; }
+// 6 Liamjohn Velazquez
+int demean(double x[], int length)
 
-// 8
-int countEvens(int x[], int length) {}
+{
+  double sum;
+  double mean;
+  int i = 0;
+  for (i; i < length; i++)
+  {
+    sum = sum + x[i];
+  }
+  mean = sum / length;
+  for (int i = 0; i < length; i++)
+  {
+    x[i] = x[i] - mean;
+  }
 
-// 9
-int reverse(int x[], int length) { return 0; }
+  return x[i];
+}
 
+// 7 Winston Lei
+int addToEach(double x[], int length, int delta) {
+  for (int i = 0; i < length; i++) {
+    x[i] += delta;
+    cout << arr[i] << " ";
+  }
+  return 0;
+  }
+
+// 8 Jackie Fang
+int countEvens(int x[], int length) {
+  int num = 0;
+  for (int i = 0; i < length; i++) {
+    if (x[i] % 2 == 0) num++;
+  }
+  return num;
+}
+
+// 9 - Valerie Ribertelli
+int reverse(int x[], int length) {
+  int counter = 0;
+  int arr[sizeof(x)/sizeof(x[0])];
+  for(int i = length-1; i >= 0; i--){
+      arr[counter] = x[i];
+      cout << arr[counter] << " " << endl;
+      counter++;
+  }
+  return 0;
+}
 // 10
 int round(double x[], int length) {}
 
