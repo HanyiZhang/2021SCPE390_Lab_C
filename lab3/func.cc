@@ -91,10 +91,7 @@ int mean2(int a, int b) {
 // 8 Jackie Fang
 int diffsq(int a, int b) {return a * a - b * b;}
 >>>>>>> 03edf383c414731d379bf4657e280e45d3cb2911
-// 9 Valerie Ribertelli
-int mean2(int a, int b) {
-   return (a+b)/2;
-}
+
 // 10
 int mean3(int a, int b, int c) {}
 // 11
