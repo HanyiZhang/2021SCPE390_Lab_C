@@ -66,12 +66,36 @@ int gcd(int a, int b) {
 }
 
 // 7 Winston Lei
+<<<<<<< HEAD
 int hypot(int a, int b) {return sqrt((a * a) + (b * b))}
+=======
+int hypot(int a, int b) {
+  double leg_x, leg_y, result;
+  leg_x = int a;
+  leg_y = int b;
+  result = hypot (leg_x, leg_y);
+  printf ("%f, %f and %f form a right-angled triangle.\n",leg_x,leg_y,result);
+  return 0;
+  }
+// 8
+int diffsq(int a, int b) {}
+=======
+// 7
+int hypot(int a, int b) {}
+<<<<<<< HEAD
+// 8
+int diffsq(int a, int b) {}
+// 9 - Valerie Ribertelli
+int mean2(int a, int b) {
+  //Returning the average of the inputs
+  return (a+b)/2
+}
+=======
+>>>>>>> 8b9de1359fdaf354cbe013bfdbe7f99eb455a7d2
 // 8 Jackie Fang
 int diffsq(int a, int b) {return a * a - b * b;}
 >>>>>>> 03edf383c414731d379bf4657e280e45d3cb2911
-// 9
-int mean2(int a, int b) {}
+
 // 10
 int mean3(int a, int b, int c) {}
 // 11
@@ -171,8 +195,20 @@ int sum(int arr[], int size) {
   return total;
 }
 
-// 6
-int demean(double x[], int length) { return 0; }
+// 6 Nathan Molinari
+int demean(double x[], int length) {
+   int avg=0; 
+  double total=0;
+    for (int i=0; i<len; i++) {
+    total += arr[i];
+    }
+  avg = total/len;
+  for (int i=0; i<len; i++) {
+    arr[i] -=avg;
+    cout << arr[i] << " ";
+  }
+
+  return 0; }
 
 // 7 Winston Lei
 int addToEach(double x[], int length, int delta) {
@@ -189,9 +225,17 @@ int countEvens(int x[], int length) {
   return num;
 }
 
-// 9
-int reverse(int x[], int length) { return 0; }
-
+// 9 - Valerie Ribertelli
+int reverse(int x[], int length) {
+  int counter = 0;
+  int arr[sizeof(x)/sizeof(x[0])];
+  for(int i = length-1; i >= 0; i--){
+      arr[counter] = x[i];
+      cout << arr[counter] << " " << endl;
+      counter++;
+  }
+  return 0;
+}
 // 10
 int round(double x[], int length) {}
 
