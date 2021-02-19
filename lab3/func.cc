@@ -45,7 +45,7 @@ int countPrimes(int a, int b) {
       count++;
     }
   }
-
+  
   return count;
 }
 // 6
@@ -60,8 +60,29 @@ int mean2(int a, int b) {}
 int mean3(int a, int b, int c) {}
 // 11
 int min(int a, int b) {}
-// 12
-int max(int a, int b) {}
+
+// 12 Peter Shihman
+int max(int a, int b) {
+    int a = 0;
+    int b = 0;
+
+    cout << "Enter a number: ";
+    cin >> a;
+    cout << "Enter another number: ";
+    cin >> b;
+
+    if (a > b)
+    {
+        cout << "Bigger number: " << a;
+        return 0;
+    }
+        else;
+    {
+        cout << "Bigger number: " << b;
+    }
+}
+
+
 // 13
 bool isEven(int a) {}
 
@@ -80,6 +101,16 @@ double mean(int x[], int length) {
 }
 
 // 2 Brandon Joel
+int max(int x[], int length) {
+  int result = INT_MIN;
+  for (int i = 0; i < length; i++){
+    if x[i] > result
+	  result = x[i];
+  }
+  return result;
+}
+
+// 2 Peter Shikhman
 int max(int x[], int length) {
   int result = INT_MIN;
   for (int i = 0; i < length; i++){
