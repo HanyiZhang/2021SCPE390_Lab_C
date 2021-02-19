@@ -68,6 +68,10 @@ int gcd(int a, int b) {
 int hypot(int a, int b) {}
 // 8 Jackie Fang
 int diffsq(int a, int b) {return a * a - b * b;}
+
+// 8 Gerard Piserchia III
+int diffsq(int a, int b) { return pow(a,2)-pow(b,2) }
+
 // 9
 int mean2(int a, int b) {}
 // 10
@@ -132,6 +136,17 @@ int max(int x[], int length) {
 	  result = x[i];
   }
   return result;
+}
+
+// 2 Gerard Piserchia III
+int max(int x[], int length) {
+  int number = INT_MIN;
+  for(int item = 0; item < length; item ++ ) {
+    if(x[item] > number) { 
+      number = x[item];
+    } 
+  }
+  return number;
 }
 
 // 3
