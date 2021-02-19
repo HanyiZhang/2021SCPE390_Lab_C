@@ -169,8 +169,20 @@ int sum(int arr[], int size) {
   return total;
 }
 
-// 6
-int demean(double x[], int length) { return 0; }
+// 6 Nathan Molinari
+int demean(double x[], int length) {
+   int avg=0; 
+  double total=0;
+    for (int i=0; i<len; i++) {
+    total += arr[i];
+    }
+  avg = total/len;
+  for (int i=0; i<len; i++) {
+    arr[i] -=avg;
+    cout << arr[i] << " ";
+  }
+
+  return 0; }
 
 // 7
 int addToEach(double x[], int length, int delta) {}
