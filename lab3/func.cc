@@ -27,8 +27,11 @@ int gcd(int a, int b) {}
 int hypot(int a, int b) {}
 // 8
 int diffsq(int a, int b) {}
-// 9
-int mean2(int a, int b) {}
+// 9 - Valerie Ribertelli
+int mean2(int a, int b) {
+  //Returning the average of the inputs
+  return (a+b)/2
+}
 // 10
 int mean3(int a, int b) {}
 // 11
@@ -66,9 +69,17 @@ int addToEach(double x[], int length, int delta) {}
 // 8
 int countEvens(int x[], int length) {}
 
-// 9
-int reverse(int x[], int length) { return 0; }
-
+// 9 - Valerie Ribertelli
+int reverse(int x[], int length) {
+  int counter = 0;
+  int arr[sizeof(x)/sizeof(x[0])];
+  for(int i = length-1; i >= 0; i--){
+      arr[counter] = x[i];
+      cout << arr[counter] << " " << endl;
+      counter++;
+  }
+  return 0;
+}
 // 10
 int round(double x[], int length) {}
 
