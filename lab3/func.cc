@@ -37,7 +37,17 @@ return sum;
 // 4
 bool isPrime(int a) {}
 // 5
-int coutPrimes(int a, int b) {}
+int countPrimes(int a, int b) {
+  int count = 0;
+
+  for (int i = a; i <= b; i++) {
+    if (isPrime(i)) {
+      count++;
+    }
+  }
+
+  return count;
+}
 // 6
 int gcd(int a, int b) {}
 // 7
@@ -95,7 +105,15 @@ int min(int x[], int length) { //Jonathan Melamed
 int prod(int x[], int length) {}
 
 // 5
-int sum(int x[], int length) {}
+int sum(int arr[], int size) {
+  int total = 0;
+
+  for (int i = 0; i < size; i++) {
+    total = total + arr[i];
+  }
+
+  return total;
+}
 
 // 6
 int demean(double x[], int length) { return 0; }
