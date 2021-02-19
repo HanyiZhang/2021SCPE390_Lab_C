@@ -141,8 +141,12 @@ int max(int a, int b) {
 // 13
 bool isEven(int a) {}
 
-// 14
-double perimeter3(int x1, int y1, int x2, int y2, int x3, int y3) {}
+// 14 - Arif Amzad
+double perimeter3(int x1, int y1, int x2, int y2, int x3, int y3) {
+  double total =0;
+  total =((((x3-x1)^2)+((y3-y1)^2))^0.5) + ((((x2-x1)^2)+(y2-y1)^2)^0.5)+ ((((x3-x2)^2)+(y3-y2)^2)^0.5);
+  return total;
+}
 
 // array functions
 // 1
@@ -198,6 +202,15 @@ int prod(int x[], int length)
 
   return product;
 }
+
+//4 - Arif Amzad
+int prod(int x[], int length) {
+  int total =1;
+  for(int i =0; i <length; i++) {
+    total *=x[i];
+  }
+}
+
 
 // 5
 int sum(int arr[], int size) {
