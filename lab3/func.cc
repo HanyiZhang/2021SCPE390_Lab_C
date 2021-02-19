@@ -11,20 +11,13 @@
 using namespace std;
 
 // scalar functions
-// 1
-<<<<<<< HEAD
-int sum(int a, int b) {}
+// 1 David Krauthamer
+int sum(int a, int b) { return a + b; }
 // 2 Brandon Joel
 int prod(int a, int b) {
   int result = a*b;
   return result;
 }
-=======
-// David Krauthamer
-int sum(int a, int b) { return a + b; }
-// 2
-int prod(int a, int b) {}
->>>>>>> ca79b29f02a2e141e985d2f14dad9a7cd79db9b0
 // 3
 int sumsq(int a, int b) {//Jonathan M
 int sum = 0;
