@@ -175,7 +175,7 @@ int demean(double x[], int length) { return 0; }
 // 7
 int addToEach(double x[], int length, int delta) {}
 
-// 8
+// 8 Jackie Fang
 int countEvens(int x[], int length) {
   int num = 0;
   for (int i = 0; i < length; i++) {
