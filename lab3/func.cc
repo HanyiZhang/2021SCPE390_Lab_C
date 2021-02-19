@@ -11,20 +11,62 @@
 using namespace std;
 
 // scalar functions
-// 1
-int sum(int a, int b) {}
-// 2
-int prod(int a, int b) {}
+// 1 David Krauthamer
+int sum(int a, int b) { return a + b; }
+// 2 Brandon Joel
+int prod(int a, int b) {
+  int result = a*b;
+  return result;
+}
 // 3
-int sumsq(int a, int b) {}
-// 4
-bool isPrime(int a) {}
+int sumsq(int a, int b) {//Jonathan M
+int sum = 0;
+for (int i = a; i <= b; i++){
+	sum += (i * i);
+}
+return sum;
+}
+
+// 4 - Thomas Wang
+bool isPrime(int a)
+{
+  if(a <= 1)
+    {
+      return false;
+    }
+
+  for(int i = 2; i < a; i++)
+    {
+      if(a % i == 0)
+	{
+	  return false
+        }
+    }
+  
+  return true;
+}
 // 5
-int coutPrimes(int a, int b) {}
-// 6
-int gcd(int a, int b) {}
+int countPrimes(int a, int b) {
+  int count = 0;
+
+  for (int i = a; i <= b; i++) {
+    if (isPrime(i)) {
+      count++;
+    }
+  }
+  
+  return count;
+}
+// 6 Nathan Molinari
+int gcd(int a, int b) {
+ if (b==0) 
+    return a;
+    return gcd(b, a%b);
+ 		       
+}
 // 7
 int hypot(int a, int b) {}
+<<<<<<< HEAD
 // 8
 int diffsq(int a, int b) {}
 // 9 - Valerie Ribertelli
@@ -32,12 +74,39 @@ int mean2(int a, int b) {
   //Returning the average of the inputs
   return (a+b)/2
 }
+=======
+// 8 Jackie Fang
+int diffsq(int a, int b) {return a * a - b * b;}
+// 9
+int mean2(int a, int b) {}
+>>>>>>> 36b74e9cd61c132d4bbf21da0a933e413e4c51c5
 // 10
-int mean3(int a, int b) {}
+int mean3(int a, int b, int c) {}
 // 11
 int min(int a, int b) {}
-// 12
-int max(int a, int b) {}
+
+// 12 Peter Shihman
+int max(int a, int b) {
+    int a = 0;
+    int b = 0;
+
+    cout << "Enter a number: ";
+    cin >> a;
+    cout << "Enter another number: ";
+    cin >> b;
+
+    if (a > b)
+    {
+        cout << "Bigger number: " << a;
+        return 0;
+    }
+        else;
+    {
+        cout << "Bigger number: " << b;
+    }
+}
+
+
 // 13
 bool isEven(int a) {}
 
@@ -46,19 +115,69 @@ double perimeter3(int x1, int y1, int x2, int y2, int x3, int y3) {}
 
 // array functions
 // 1
-double mean(int x[], int length) {}
+// David Krauthamer
+double mean(int x[], int length) {
+  int tot = 0;
+  for (int i = 0; i < length; i++) {
+    tot += x[i];
+  }
+  return (double)tot / length;
+}
 
-// 2
-int max(int x[], int length) {}
+// 2 Brandon Joel
+int max(int x[], int length) {
+  int result = INT_MIN;
+  for (int i = 0; i < length; i++){
+    if x[i] > result
+	  result = x[i];
+  }
+  return result;
+}
+
+// 2 Peter Shikhman
+int max(int x[], int length) {
+  int result = INT_MIN;
+  for (int i = 0; i < length; i++){
+    if x[i] > result
+	  result = x[i];
+  }
+  return result;
+}
 
 // 3
-int min(int x[], int length) {}
+int min(int x[], int length) { //Jonathan Melamed
 
-// 4
-int prod(int x[], int length) {}
+   int head = x[0];
+	for (int i = 0; int < 0; i<length; i++){
+		if (head > x[i]){
+			head = x[i];
+			}
+	}	
+   return head;
+}
+
+// 4 - Thomas Wang
+int prod(int x[], int length)
+{
+  int product = 1;
+  for(int i = 0; i < length; i++)
+    {
+      product *= x[i];
+    }
+
+  return product;
+}
 
 // 5
-int sum(int x[], int length) {}
+int sum(int arr[], int size) {
+  int total = 0;
+
+  for (int i = 0; i < size; i++) {
+    total = total + arr[i];
+  }
+
+  return total;
+}
 
 // 6
 int demean(double x[], int length) { return 0; }
@@ -66,8 +185,14 @@ int demean(double x[], int length) { return 0; }
 // 7
 int addToEach(double x[], int length, int delta) {}
 
-// 8
-int countEvens(int x[], int length) {}
+// 8 Jackie Fang
+int countEvens(int x[], int length) {
+  int num = 0;
+  for (int i = 0; i < length; i++) {
+    if (x[i] % 2 == 0) num++;
+  }
+  return num;
+}
 
 // 9 - Valerie Ribertelli
 int reverse(int x[], int length) {
@@ -94,14 +219,14 @@ void print(int a[], int length) {
 
 int main() {
   cout << sum(1, 3) << ' ' << sum(1, 100)
-       << '\n';  // should work no problem, right?
+       << '\n'; // should work no problem, right?
   cout << sum(1, 1000000)
-       << '\n';  // what should this be? Don't assume it's right, check!
+       << '\n'; // what should this be? Don't assume it's right, check!
 
-  cout << prod(2, 5) << '\n';  // 2*3*4*5 = 120
+  cout << prod(2, 5) << '\n'; // 2*3*4*5 = 120
   cout << prod(3, 10) << '\n';
-  cout << prod(3, 20) << '\n';  // just note whether you think these are right
-  cout << prod(3, 30) << '\n';  // if it overflows, you don't have to fix it
+  cout << prod(3, 20) << '\n'; // just note whether you think these are right
+  cout << prod(3, 30) << '\n'; // if it overflows, you don't have to fix it
   cout << prod(3, 100) << '\n';
   cout << sumsq(1, 5) << '\n';
   cout << "countPrimes(1,100): " << countPrimes(1, 100) << '\n';
@@ -112,8 +237,8 @@ int main() {
   cout << "hypot(3,4)=" << hypot(3, 4) << '\n';
   cout << "hypot(4,5)=" << hypot(4, 5) << '\n';
   cout << "diffsq(3,4)=" << diffsq(3, 4) << '\n';
-  cout << "mean(1,4)=" << mean2(1, 4) << '\n';
-  cout << "mean(1,4,5)=" << mean3(1, 4, 5) << '\n';
+  cout << "mean2(1,4)=" << mean2(1, 4) << '\n';
+  cout << "mean3(1,4,5)=" << mean3(1, 4, 5) << '\n';
   cout << "max(1,5)=" << max(1, 5) << '\n';
   cout << "min(2,5)=" << min(2, 5) << '\n';
   cout << "isEven(5)=" << isEven(5) << '\n';
@@ -121,12 +246,12 @@ int main() {
 
   // array problems
   int arr[] = {1, 4, 3, 2};
-  cout << "arr avg=" << mean(arr, 4) << '\n';            // should be 2.5
-  cout << "arr max=" << max(arr, 4) << '\n';             // should be 4
-  cout << "arr max=" << min(arr, 4) << '\n';             // should be 1
-  cout << "arr prod=" << prod(arr, 4) << '\n';           // should be 24
-  cout << "arr sum=" << sum(arr, 4) << '\n';             // should be 10
-  cout << "count evens=" << countEvens(arr, 4) << '\n';  // should be 10
+  cout << "arr avg=" << mean(arr, 4) << '\n';           // should be 2.5
+  cout << "arr max=" << max(arr, 4) << '\n';            // should be 4
+  cout << "arr max=" << min(arr, 4) << '\n';            // should be 1
+  cout << "arr prod=" << prod(arr, 4) << '\n';          // should be 24
+  cout << "arr sum=" << sum(arr, 4) << '\n';            // should be 10
+  cout << "count evens=" << countEvens(arr, 4) << '\n'; // should be 10
 
   int arr2[] = {5, 6, 7, 8, 9, 10, 2, 1};
   cout << "arr avg=" << mean(arr2, 8) << '\n';
