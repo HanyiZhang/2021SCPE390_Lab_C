@@ -16,7 +16,14 @@ int sum(int a, int b) {}
 // 2
 int prod(int a, int b) {}
 // 3
-int sumsq(int a, int b) {}
+int sumsq(int a, int b) {//Jonathan M
+int sum = 0;
+for (int i = a; i <= b; i++){
+	sum += (i * i);
+}
+return sum;
+}
+
 // 4
 bool isPrime(int a) {}
 // 5
