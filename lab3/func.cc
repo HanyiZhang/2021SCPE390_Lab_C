@@ -66,8 +66,8 @@ int gcd(int a, int b) {
 }
 // 7
 int hypot(int a, int b) {}
-// 8
-int diffsq(int a, int b) {}
+// 8 Jackie Fang
+int diffsq(int a, int b) {return a * a - b * b;}
 // 9
 int mean2(int a, int b) {}
 // 10
@@ -175,8 +175,14 @@ int demean(double x[], int length) { return 0; }
 // 7
 int addToEach(double x[], int length, int delta) {}
 
-// 8
-int countEvens(int x[], int length) {}
+// 8 Jackie Fang
+int countEvens(int x[], int length) {
+  int num = 0;
+  for (int i = 0; i < length; i++) {
+    if (x[i] % 2 == 0) num++;
+  }
+  return num;
+}
 
 // 9
 int reverse(int x[], int length) { return 0; }
