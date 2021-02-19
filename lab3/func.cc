@@ -64,6 +64,19 @@ int gcd(int a, int b) {
     return gcd(b, a%b);
  		       
 }
+<<<<<<< HEAD
+// 7 Winston Lei
+int hypot(int a, int b) {
+  double leg_x, leg_y, result;
+  leg_x = int a;
+  leg_y = int b;
+  result = hypot (leg_x, leg_y);
+  printf ("%f, %f and %f form a right-angled triangle.\n",leg_x,leg_y,result);
+  return 0;
+  }
+// 8
+int diffsq(int a, int b) {}
+=======
 // 7
 int hypot(int a, int b) {}
 <<<<<<< HEAD
@@ -77,6 +90,7 @@ int mean2(int a, int b) {
 =======
 // 8 Jackie Fang
 int diffsq(int a, int b) {return a * a - b * b;}
+>>>>>>> 03edf383c414731d379bf4657e280e45d3cb2911
 // 9
 int mean2(int a, int b) {}
 >>>>>>> 36b74e9cd61c132d4bbf21da0a933e413e4c51c5
