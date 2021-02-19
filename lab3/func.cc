@@ -95,8 +95,26 @@ int diffsq(int a, int b) {return a * a - b * b;}
 
 // 10
 int mean3(int a, int b, int c) {}
-// 11
-int min(int a, int b) {}
+// 11 Christian Diesen
+int min(int a, int b) {
+  int a;
+  int b;
+  cout << "enter a number" << endl;
+  cin >> a;
+  cout << "enter a second number" << endl;
+  cin >> b;
+  if (a > b){
+    cout << a << "is the minimum" << endl;
+    return b;
+  }
+  else if (b < a){
+    cout << b << "is the minimum" << endl;
+    return a;
+  }
+  else{
+    cout << "the numbers are equal" << endl;
+  }
+}
 
 // 12 Peter Shihman
 int max(int a, int b) {
