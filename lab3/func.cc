@@ -13,8 +13,11 @@ using namespace std;
 // scalar functions
 // 1
 int sum(int a, int b) {}
-// 2
-int prod(int a, int b) {}
+// 2 Brandon Joel
+int prod(int a, int b) {
+  int result = a*b;
+  return result;
+}
 // 3
 int sumsq(int a, int b) {}
 // 4
@@ -45,8 +48,15 @@ double perimeter3(int x1, int y1, int x2, int y2, int x3, int y3) {}
 // 1
 double mean(int x[], int length) {}
 
-// 2
-int max(int x[], int length) {}
+// 2 Brandon Joel
+int max(int x[], int length) {
+  int result = INT_MIN;
+  for (int i = 0; i < length; i++){
+    if x[i] > result
+	  result = x[i];
+  }
+  return result;
+}
 
 // 3
 int min(int x[], int length) {}
