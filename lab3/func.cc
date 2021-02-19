@@ -11,20 +11,13 @@
 using namespace std;
 
 // scalar functions
-// 1
-<<<<<<< HEAD
-int sum(int a, int b) {}
+// 1 David Krauthamer
+int sum(int a, int b) { return a + b; }
 // 2 Brandon Joel
 int prod(int a, int b) {
   int result = a*b;
   return result;
 }
-=======
-// David Krauthamer
-int sum(int a, int b) { return a + b; }
-// 2
-int prod(int a, int b) {}
->>>>>>> ca79b29f02a2e141e985d2f14dad9a7cd79db9b0
 // 3
 int sumsq(int a, int b) {//Jonathan M
 int sum = 0;
@@ -34,8 +27,24 @@ for (int i = a; i <= b; i++){
 return sum;
 }
 
-// 4
-bool isPrime(int a) {}
+// 4 - Thomas Wang
+bool isPrime(int a)
+{
+  if(a <= 1)
+    {
+      return false;
+    }
+
+  for(int i = 2; i < a; i++)
+    {
+      if(a % i == 0)
+	{
+	  return false
+        }
+    }
+  
+  return true;
+}
 // 5
 int countPrimes(int a, int b) {
   int count = 0;
@@ -48,8 +57,13 @@ int countPrimes(int a, int b) {
   
   return count;
 }
-// 6
-int gcd(int a, int b) {}
+// 6 Nathan Molinari
+int gcd(int a, int b) {
+ if (b==0) 
+    return a;
+    return gcd(b, a%b);
+ 		       
+}
 // 7
 int hypot(int a, int b) {}
 // 8
@@ -132,8 +146,17 @@ int min(int x[], int length) { //Jonathan Melamed
    return head;
 }
 
-// 4
-int prod(int x[], int length) {}
+// 4 - Thomas Wang
+int prod(int x[], int length)
+{
+  int product = 1;
+  for(int i = 0; i < length; i++)
+    {
+      product *= x[i];
+    }
+
+  return product;
+}
 
 // 5
 int sum(int arr[], int size) {
