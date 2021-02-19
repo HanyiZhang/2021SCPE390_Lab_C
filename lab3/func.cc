@@ -63,6 +63,19 @@ int countPrimes(int a, int b) {
   
   return count;
 }
+
+// 5 Claire McNeill
+int countPrimes(int a, int b) {
+  int primes = 0;
+  for (int i = a; i <= b; i++) {
+    if (isPrime(i)) {
+      primes++;
+    }
+  }
+  return primes;
+}
+
+
 // 6 Nathan Molinari
 int gcd(int a, int b) {
  if (b==0) 
@@ -302,6 +315,17 @@ int reverse(int x[], int length) {
   }
   return 0;
 }
+
+// 9 Claire McNeill
+int reverse(int x[], int length) {
+  int counter = 0;
+  for (int i = length - 1; i >=0; i--) {
+    cout << x [i] << ", ";
+  }
+  cout << "\n";
+  return 0;
+}
+
 // 10
 int round(double x[], int length) {}
 
