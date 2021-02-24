@@ -1,4 +1,7 @@
 // compute the hypotenuse given the two sides
+#include <iostream>
+using namespace std;
+
 double hypotenuse(double a, double b);
 
 // compute the average of the two values
