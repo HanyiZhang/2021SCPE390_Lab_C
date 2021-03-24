@@ -296,11 +296,11 @@ int main() {
 //    benchmark1("b10", b7, n, numTrials);
 
 	// this is the size for array problems on the pi
-	const uint32_t narray = 40000000; // 40 million
+	const uint32_t narray = 10000000; // 40 million
 
 	 // this should take enough time ( a couple of seconds)
 	// to get meaningful results on on the pi. You might need more on PC
-	const uint32_t iter = 200; // iterations per trial
+	const uint32_t iter = 40; // iterations per trial
 
 	benchmark2("readOneLocation", readOneLocation, narray, iter, numTrials);
 	benchmark2("readArray", readArray, narray, iter, numTrials);
