@@ -309,8 +309,8 @@ int main() {
 	benchmark2("array2", array2, narray, iter, numTrials);
 
 	// YOU MUST COMPLETE array3,4 it is not finished!
-    benchmark2("array3", array3, narray, numTrials);
-    benchmark2("array4", array4, narray, numTrials);
-    benchmark2("array5", array5, narray, numTrials);
-    benchmark2("array6", array6, narray, numTrials);
+    benchmark2("array3", array3, narray, iter, numTrials);
+    benchmark2("array4", array4, narray, iter, numTrials);
+    benchmark2("array5", array5, narray, iter, numTrials);
+    benchmark2("array6", array6, narray, iter, numTrials);
 }
